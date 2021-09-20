@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Innovación y Tecnología Sustentable</title>
+    <!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="estylo2.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/1.11.1/css/jquery.dataTables.min.css">
+</head>
+<div style="text-align: right;" id="horafecha"></div>
+<body id="body"> 
+  <script>
+    function alerta (){
+      alert("Bienvenidos a mi página, espero tus comentarios.");
+    }
+  </script>
+  <input type="button" onclick="alerta()" value="Presiona aquí">
+  
+  <select name="fondo" id="fondo" onchange="cambiaFondo (this)">
+    <option value="lightblue">Celeste</option>
+    <option value="red">Rojo</option>
+    <option value="blue">Azul</option>
+    <option value="green">Verde</option>
+    <option value="yellow">Amarillo</option>
+  </select>
+    <script src="Cambio.js"></script>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./Index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./Acerca.html">Quienes somos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./Contacto.html">Contacto</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex">
+                      <input class="form-control me-2" type="Search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+        </header>
+        <header>
+        <nav>
+            <ul>
+                <h1>Innovación, Ciencia y Tecnología.</h1>
+                <a class="btn btn-primary" href="./Emprendedores.html" role="button">Seamos Emprendedores</a>
+                <a class="btn btn-primary" href="./Metodos.html" role="button">Métodos que generan innovación</a>
+                <a class="btn btn-primary" href="./Avances.html" role="button">Avances que generan impacto</a>
+                <a class="btn btn-primary" href="./Digitalizacion.html" role="button">Digitalizacion en América.</a>              
+            </ul>
+        </nav>
+        </header>
+        <main>
+        <section>
+                <h2>Ideas Innovadoras; Ciencia tecnología y avances en siglo XXI.</h2>
+
+                <p style="text-align: justify; margin-top: 1rem;">La modernidad ha traído consigo una serie de avances y aportes creativos al desarrollo de la humanidad. Por ejemplo, podemos destacar el descubrimiento de nuevos planetas y galaxias con sondas y telescopios espaciales, resultado del surgimiento de microprocesadores y cohetes más eficientes. El hallazgo de la penicilina y de vacunas para combatir enfermedades como la Viruela y el Covid-19, que salvan millones de vidas. También descubrimientos más comunes cómo el Internet y los Smartphones, que nos permiten acompañar nuestros paseos y ratos libres con canciones, fotografías y libros favoritos, con tan sólo un touch.
+
+            Resulta interesante detenernos a revisar los efectos que estas innovaciones tienen sobre nosotros, especialmente sobre la apreciación del tiempo y en nuestra forma de vivir (Bauman, 2003). Un ejemplo de ello es que hoy podemos tener amigos en otros continentes, con los que nos relacionamos por Twitter, Facebook y/o Instagram de forma rápida y fluida, y al mismo tiempo tenemos vecinos con los que nos cruzamos diariamente y que no llegamos nunca a conocer, a pesar de que tal vez, nos aquejan problemas comunes.</p>
+       </section>
+       <section class="row col-12">
+        <div class="row col-12">
+          <h2>Galeria</h2>
+        </div>
+        <div class="row col-3" style="text-align: center;"><img class="img-thumbnail" src="./Img/image01.jpg" alt="Imagen1"></div>
+        <div class="row col-3" style="text-align: center;"><img class="img-thumbnail" src="./Img/image02.jpg" alt="Imagen2"></div>
+        <div class="row col-3" style="text-align: center;"><img class="img-thumbnail" src="./Img/image03.jpg" alt="Imagen3"></div>
+        <div class="row col-3" style="text-align: center;"><img class="img-thumbnail" src="./Img/image04.jpg" alt="Imagen4"></div>
+           
+        <div class="container">
+            <h2 style="text-align: justify;">Países más innovadores de América Latina.</h2>
+            <table id="example" class="display" style="width:100%">
+              <thead>
+                <tr>
+                  <th>Lugar</th>
+                  <th>País</th>
+                  <th>Puntuación</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Chile</td>
+                  <td>33,9</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>México</td>
+                  <td>33,6</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Costa Rica</td>
+                  <td>33,5</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Brasil</td>
+                  <td>31,9</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Colombia</td>
+                  <td>30,8</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>Uruguay</td>
+                  <td>30,8</td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>Panamá</td>
+                  <td>29,0</td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>Perú</td>
+                  <td>28,8</td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>Argentina</td>
+                  <td>28,3</td>
+                </tr>
+              </tbody>
+              <table>
+          </div>
+
+            <p style="text-align: justify; margin-top: 1rem;">links de accesos anexos:</p>
+            <li><a href="https://www.emprendedores.es/ideas-de-negocio/ideas-innovadoras-2/">Emprendedores</a></li>
+            <li><a href="https://blog.hotmart.com/es/ideas-de-negocios/">Ideas de negocios</a></li>
+            <li><a href="https://inteligencialimite.org/inteligencialimite/2021/07/13/de-que-hablamos-cuando-hablamos-de-calidad-de-vida/?gclid=EAIaIQobChMIj9av4pDk8gIVNfC1Ch0LJAVlEAAYASAAEgJvQvD_BwE">Inteligencia límite</a></li>
+            <li><a href="https://laquintaemprende.cl/2021/01/jovenes-crean-innovadores-proyectos-que-buscan-mejorar-la-calidad-de-vida-de-los-chilenos-tras-pandemia/">La quinta emprende</a></li>
+       </section>
+    </main>
+   
+    <footer>
+        <p style="text-align: justify; margin-top: 1rem;">Innovación y tecnología sustentable 2021 ©️Derechos Reservados</p>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   <script src="https://cdn.datatables.net/1.11.1/js/jquery.dataTables.min.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>

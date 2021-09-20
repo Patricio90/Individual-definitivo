@@ -1,0 +1,9 @@
+body{
+  background-color:lightblue;
+  color: rojo(255, 196, 196);
+}
+.texto{
+  background-color: teal;
+  color: rgb(190, 205, 50);
+}
+
